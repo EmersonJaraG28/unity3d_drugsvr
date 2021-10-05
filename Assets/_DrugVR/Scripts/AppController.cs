@@ -85,8 +85,17 @@ public class AppController : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         currentScene = Instantiate(currentData.scene);
+        currentScene.GetComponent<SceneController>().OnFinishScenAction += ChangeScene;
         doorModels.SetActive(false);
         doorsPanel.SetActive(false);
+    }
+
+    private void ChangeScene()
+    {
+        Destroy(currentScene);
+
+        EnableDoorPanel();
+        EnableDoorsBtn(true);
     }
 }
 
