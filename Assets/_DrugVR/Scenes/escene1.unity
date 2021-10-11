@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &605480164
+--- !u!21 &529611350
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -157,6 +157,41 @@ Material:
     - _UseUIAlphaClip: 0
     m_Colors:
     - _WidthHeightRadius: {r: 70.74, g: 34.5, b: 16.4, a: 0}
+  m_BuildTextureStacks: []
+--- !u!21 &532220390
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/RoundedCorners
+  m_Shader: {fileID: 4800000, guid: f2273a6a8ad839c479926f346bfb19ac, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _WidthHeightRadius: {r: 200, g: 74.63, b: 33.83, a: 0}
   m_BuildTextureStacks: []
 --- !u!1 &864997561
 GameObject:
@@ -224,41 +259,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1844910570
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/RoundedCorners
-  m_Shader: {fileID: 4800000, guid: f2273a6a8ad839c479926f346bfb19ac, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _WidthHeightRadius: {r: 200, g: 74.63, b: 33.83, a: 0}
-  m_BuildTextureStacks: []
 --- !u!1 &2128953814
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +362,7 @@ PrefabInstance:
     - target: {fileID: 861062635391057613, guid: f44e1741f86cc6c4db8372614ef224b8, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 1844910570}
+      objectReference: {fileID: 532220390}
     - target: {fileID: 3224888273668246076, guid: f44e1741f86cc6c4db8372614ef224b8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -414,7 +414,7 @@ PrefabInstance:
     - target: {fileID: 8040569284479704001, guid: f44e1741f86cc6c4db8372614ef224b8, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 605480164}
+      objectReference: {fileID: 529611350}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44e1741f86cc6c4db8372614ef224b8, type: 3}
 --- !u!1001 &7920025447809015027
