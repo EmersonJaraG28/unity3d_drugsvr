@@ -4147,18 +4147,33 @@ MonoBehaviour:
   popupPanel: {fileID: 6632336481440891297}
   popupText: {fileID: 7873319895637525708}
   dialogSound: {fileID: 8300000, guid: d85e33da7ea28184ca37d16dce8eb58a, type: 3}
-  messages:
-  - "\u201CLa Droga m\xE1s consumida en el Per\xFA es la Cerveza.\u201D"
-  - "\u201CDentro de las Drogas Legales en el Per\xFA Encontramos El Alcohol entre
-    Otras.\u201D "
-  - "\u201CDentro de las Drogas ilegales en el Per\xFA Encontramos El consumo de
-    la Marihuana entre otros tipos de Sustancias.\u201D"
-  - "\u201CLas Drogas Son sustancias de origen natural o artificial que introducidas
-    en el organismo producen cambios f\xEDsicos y de comportamiento.\u201D"
-  - "\u201CEl Alcoholismo es una enfermedad cr\xF3nica, un desorden de la conducta
-    caracterizada por la ingesti\xF3n repetida de bebidas alcoh\xF3licas.\u201D"
-  - "\u201CLo que se evidencia en el cuarto del Personaje, encontramos estos tipos
-    de Sustancias: Pipa, marihuana, cervezas, cannabis, pasta b\xE1sica, coca\xEDna.\u201D"
+  data:
+  - sound: {fileID: 8300000, guid: bcad41e950871bf4a89db8daee35ca5d, type: 3}
+    message: "\u201CLa Droga m\xE1s consumida en el Per\xFA es la Cerveza\u201D"
+  - sound: {fileID: 8300000, guid: 9a13a08be76176a42ba2f411297b52b3, type: 3}
+    message: "\u201CDentro de las Drogas Legales en el Per\xFA Encontramos El Alcohol
+      entre Otras\u201D"
+  - sound: {fileID: 8300000, guid: e05a04c34725dbd4aa95291ef22f6b2a, type: 3}
+    message: "\u201CDentro de las Drogas ilegales en el Per\xFA Encontramos El consumo
+      de la Marihuana entre otros tipos de Sustancias\u201D"
+  - sound: {fileID: 8300000, guid: 9f289a1d69933eb4a9f505b4a0711ecd, type: 3}
+    message: "\u201CLas Drogas Son sustancias de origen natural o artificial que
+      introducidas en el organismo producen cambios f\xEDsicos y de comportamiento\u201D"
+  - sound: {fileID: 8300000, guid: 36638696a366668419a70fb9d0e594a0, type: 3}
+    message: "\u201CEl Alcoholismo es una enfermedad cr\xF3nica, un desorden de la
+      conducta caracterizada por la ingesti\xF3n repetida de bebidas alcoh\xF3licas.\u201D"
+  - sound: {fileID: 8300000, guid: 26e8d3ba8e9386a4a8dfda3453c372cf, type: 3}
+    message: "\u201CEl cannabis esta planta tiene alrededor de sesenta componentes,
+      entre ellos est\xE1 el THC (tetrahidrocannabinol), que es el componente m\xE1s
+      conocido y con mayor psicoactividad\u201D"
+  - sound: {fileID: 8300000, guid: 79bd211cc2153b4459a8f9b7a2659ab6, type: 3}
+    message: "\u201CLos opioides son una clase de drogas que incluyen la droga ilegal
+      hero\xEDna, los opioides sint\xE9ticos (como el fentanilo) y ciertos analg\xE9sicos\_que
+      est\xE1n disponibles legalmente con prescripci\xF3n m\xE9dica, como la oxicodona,
+      la hidrocodona, la code\xEDna, la morfina y muchos otros\u201D"
+  - sound: {fileID: 8300000, guid: abd853f9bdef2724b88823b166bea32f, type: 3}
+    message: "\u201CEl porcentaje de entre 80% y 90 % de personas que fuman marihuana
+      o otros tipos de sustancias a diario se vuelven adictas\u201D"
   exitBtn: {fileID: 2859328263394787282}
 --- !u!82 &638115670893463623
 AudioSource:
@@ -4171,7 +4186,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8909fc470b220a04d83dc5cc8a565b9e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.2
   m_Pitch: 1
   Loop: 1

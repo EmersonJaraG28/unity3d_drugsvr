@@ -12,7 +12,7 @@ public class SceneController : MonoBehaviour
     public GameObject popupPanel;
     public Text popupText;
     public AudioClip dialogSound;
-    public List<string> messages;
+    public List<DrugData> data;
 
     public Button exitBtn;
 
@@ -36,14 +36,25 @@ public class SceneController : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
+        GetComponent<AudioSource>().Play();
+
         popupPanel.SetActive(true);
         popupPanel.GetComponent<CanvasGroup>().DOFade(1, 0.5f);
 
-        foreach (var item in messages)
+        foreach (var item in data)
         {
-            popupText.text = item;
+            popupText.text = item.message;
             popupText.GetComponent<CanvasGroup>().DOFade(1, 0.5f);
-            yield return new WaitForSeconds(8f);
+
+            GameObject _sound = new GameObject();
+            _sound.transform.SetParent(transform);
+            _sound.AddComponent<AudioSource>();
+            _sound.GetComponent<AudioSource>().clip = item.sound;
+            _sound.GetComponent<AudioSource>().Play();
+
+            yield return new WaitForSeconds(item.sound.length);
+            Destroy(_sound);
+
             popupText.GetComponent<CanvasGroup>().DOFade(0, 0.5f);
             yield return new WaitForSeconds(1f);
         }
@@ -67,4 +78,11 @@ public class SceneController : MonoBehaviour
             OnFinishScenAction?.Invoke();
         }
     }
+}
+
+[System.Serializable]
+public class DrugData
+{
+    public AudioClip sound;
+    public string message;
 }
